@@ -5,7 +5,6 @@
 }
 
 body {
-  background: red;
   min-height: 100vh;
   font-family: "Barlow", sans-serif
 }
@@ -218,6 +217,14 @@ body {
   background-size: 100% 100%
 }
 
+.design>div:nth-child(1) h1, .design>div:nth-child(1) p {
+  color: #25564b
+}
+
+.design>div:nth-child(2) h1, .design>div:nth-child(2) p {
+  color: #19536b
+}
+
 .design>div>div {
   position: absolute;
   bottom: 0;
@@ -253,7 +260,8 @@ body {
 
 .testimonials h1 {
   font-family: 'Fraunces';
-  color: #818498
+  color: #818498;
+  margin-bottom: 1rem
 }
 
 .testimonials .profiles {
@@ -271,7 +279,7 @@ body {
 .testimonials>div>div {
   height: 90%;
   width: 27%;
-  min-height: 34rem;
+  min-height: 35rem;
   min-width: 25rem;
   display: flex;
   justify-content: space-evenly;
@@ -289,11 +297,12 @@ body {
 }
 
 .profiles>div>div>h3 {
-  font-family: 'Fraunces'
+  font-family: 'Fraunces';
+  color: #23303e
 }
 
 .profiles>div>div>p {
-  color: #818498;
+  color: #a7abae;
   line-height: 3rem
 }
 
@@ -305,6 +314,57 @@ body {
   justify-content: space-between;
   align-items: center;
   flex-direction: column
+}
+
+.gallery {
+  height: auto;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center
+}
+
+.gallery>div {
+  min-width: 18rem;
+  height: auto;
+  width: 25%
+}
+
+.gallery>div>img {
+  width: 100%;
+  margin-bottom: -3px
+}
+
+.footer {
+  min-height: 21rem;
+  background: #458c7ec2;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column
+}
+
+.footer>ul {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  list-style: none;
+  width: 100%;
+  color: #3d7b6f
+}
+
+.footer>img {
+  width: 12rem
+}
+
+.footer ul:nth-child(2) {
+  max-width: 35rem;
+  transform: translateY(-1rem)
+}
+
+.footer ul:nth-child(3) {
+  max-width: 17rem
 }
 
 @media only screen and (max-width: 750px) {
@@ -400,10 +460,15 @@ body {
     height: 48%
   }
 
+  .testimonials {
+    padding: 5rem 0 1.5rem 0
+  }
+
   .testimonials>div>div {
     min-width: auto;
     width: 100%;
-    max-width: 22rem
+    max-width: 22rem;
+    min-height: 33rem
   }
 
   .testimonials .profiles {
@@ -412,6 +477,11 @@ body {
 
   .profiles>div {
     padding: 0
+  }
+
+  .gallery>div {
+    width: 50%;
+    min-width: auto
   }
 }
 
