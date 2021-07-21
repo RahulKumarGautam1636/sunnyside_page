@@ -233,7 +233,8 @@ body {
   transform: translate(-50%);
   text-align: center;
   min-height: auto;
-  height: 17vw
+  height: 17vw;
+  margin-bottom: 1.5vw;
 }
 
 .design h1 {
