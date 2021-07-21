@@ -4,7 +4,6 @@
   box-sizing: border-box
 
 body
-  background: red
   min-height: 100vh
   font-family: "Barlow", sans-serif
 .navBarContainer
@@ -90,9 +89,6 @@ body
 .home
   min-height: auto
   position: relative
-  // background: url(images/desktop/image-header.jpg)
-  // background-size: 100vw auto
-  // background-repeat: no-repeat
 .home img
   width: 100%
 .home h1
@@ -113,6 +109,7 @@ body
   width: 100%
   display: flex
   margin-top: -4px
+  position: relative
 .brand > div
   height: 100%
   width: 50%
@@ -147,6 +144,128 @@ body
   background: url(images/desktop/image-transform.jpg)
   background-repeat: no-repeat
   background-size: 100% 100%
+.stand
+  flex-direction: row-reverse
+.stand > div:nth-child(2)
+  background: url(images/desktop/image-stand-out.jpg)
+  background-size: 100% 100%
+.design > div
+  position: relative
+.design > div:nth-child(1)
+  background: url(images/desktop/image-graphic-design.jpg)
+  background-size: 100% 100%
+.design > div:nth-child(2)
+  background: url(images/desktop/image-photography.jpg)
+  background-size: 100% 100%
+.design > div:nth-child(1) h1,
+.design > div:nth-child(1) p
+  color: hsl(167, 40%, 24%)
+.design > div:nth-child(2) h1,
+.design > div:nth-child(2) p
+  color: hsl(198, 62%, 26%)
+.design > div > div
+  position: absolute
+  bottom: 0
+  height: 18vw
+  left: 50%
+  transform: translate(-50%)
+  text-align: center
+  min-height: auto
+  height: 17vw
+.design h1
+  margin: 0 auto
+  font-size: clamp(1.5rem, 3.2vw, 3rem)
+.design p
+  line-height: clamp(1.1rem, 2vw, 1.9rem)
+  font-size: clamp(0.8rem, 1.3vw, 2rem)
+.testimonials
+  min-height: 55rem
+  height: auto
+  width: 100%
+  background: #fff
+  display: flex
+  flex-direction: column
+  align-items: center
+  justify-content: space-evenly
+  padding: 5rem 0
+.testimonials h1
+  font-family: 'Fraunces'
+  color: hsl(232, 10%, 55%)
+  margin-bottom: 1rem
+.testimonials .profiles
+  height: auto
+  flex-wrap: wrap
+  min-height: 80%
+  width: 100%
+  background: white
+  display: flex
+  justify-content: space-evenly
+  align-items: center
+  padding: 0 2rem
+.testimonials > div > div
+  height: 90%
+  width: 27%
+  min-height: 35rem
+  min-width: 25rem
+  display: flex
+  justify-content: space-evenly
+  align-items: center
+  flex-direction: column
+.profiles > div img
+  border-radius: 50%
+.profiles > div > p
+  line-height: 1.9rem
+  color: hsl(213, 9%, 39%)
+.profiles > div > div > h3
+  font-family: 'Fraunces'
+  color: hsl(212, 27%, 19%)
+.profiles > div > div > p
+  color: hsl(210, 4%, 67%)
+  line-height: 3rem
+.profiles > div
+  text-align: center
+  padding: 0 3rem
+  height: 10%
+  display: flex
+  justify-content: space-between
+  align-items: center
+  flex-direction: column
+.gallery
+  height: auto
+  width: 100%
+  display: flex
+  flex-wrap: wrap
+  justify-content: center
+  align-items: center
+.gallery > div
+  min-width: 18rem
+  height: auto
+  width: 25%
+.gallery > div > img
+  width: 100%
+  margin-bottom: -3px
+.footer
+  min-height: 21rem
+  background: #458c7ec2
+  display: flex
+  justify-content: space-evenly
+  align-items: center
+  flex-direction: column
+.footer > ul
+  display: flex
+  justify-content: space-evenly
+  align-items: center
+  list-style: none
+  width: 100%
+  color: hsl(168deg, 34%, 36%)
+.footer > img
+  width: 12rem
+.footer ul:nth-child(2)
+  max-width: 35rem
+  transform: translateY(-1rem)
+.footer ul:nth-child(3)
+  max-width: 17rem
+
 @media only  screen and (max-width: 750px)
     .navBarContainer
       padding: 0 2rem
@@ -196,7 +315,32 @@ body
     .brand p
       font-size: 4.3vw
       line-height: 6.6vw
-
+    .brand a
+      font-size: clamp(0.7rem, 3.4vw, 3rem)
+    .design > div:nth-child(1)
+      background: url(images/mobile/image-graphic-design.jpg)
+      background-size: 100% 100%
+      height: 140vw
+    .design > div:nth-child(2)
+      background: url(images/mobile/image-photography.jpg)
+      background-size: 100% 100%
+      height: 150vw
+    .design > div > div
+      height: 48%
+    .testimonials
+      padding: 5rem 0 1.5rem 0
+    .testimonials > div > div
+      min-width: auto
+      width: 100%
+      max-width: 22rem
+      min-height: 33rem
+    .testimonials .profiles
+      padding: 0 5vw
+    .profiles > div
+      padding: 0
+    .gallery > div
+      width: 50%
+      min-width: auto
 .active
   opacity: 1
   height: 22rem
