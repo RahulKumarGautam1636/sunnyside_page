@@ -26,11 +26,9 @@ body
   list-style: none
   position: relative
   transition: height 0.5s, opacity 0.5s
-.navBar li
-  color: #fff
 .navBar li a
   text-decoration: none
-  color: #000
+  color: #fff
 .navBar li span
   padding: 1rem 1.5rem
   background: #fff
@@ -172,6 +170,7 @@ body
   text-align: center
   min-height: auto
   height: 17vw
+  margin-bottom: 1.5vw
 .design h1
   margin: 0 auto
   font-size: clamp(1.5rem, 3.2vw, 3rem)
@@ -257,6 +256,8 @@ body
   align-items: center
   list-style: none
   width: 100%
+.footer ul li a
+  text-decoration: none
   color: hsl(168deg, 34%, 36%)
 .footer > img
   width: 12rem
@@ -265,7 +266,16 @@ body
   transform: translateY(-1rem)
 .footer ul:nth-child(3)
   max-width: 17rem
-
+.attribution
+  text-align: center
+  background: hsl(233, 12%, 13%)
+.attribution p,
+.attribution a
+  font-size: clamp(0.5rem, 3vw, 1.1rem)
+  text-decoration: none
+  color: hsl(39, 89%, 49%)
+.attribution p
+  color: hsl(189, 59%, 53%)
 @media only  screen and (max-width: 750px)
     .navBarContainer
       padding: 0 2rem
@@ -286,7 +296,7 @@ body
       flex-direction: column
       justify-content: space-evenly
       border-radius: 7px 0 7px 7px
-    .navBar li
+    .navBar li a
       color: hsl(213, 9%, 39%)
     .navBar li span
       background: Yellow
