@@ -33,13 +33,9 @@ body {
   transition: height 0.5s, opacity 0.5s
 }
 
-.navBar li {
-  color: #fff
-}
-
 .navBar li a {
   text-decoration: none;
-  color: #000
+  color: #fff
 }
 
 .navBar li span {
@@ -234,7 +230,7 @@ body {
   text-align: center;
   min-height: auto;
   height: 17vw;
-  margin-bottom: 1.5vw;
+  margin-bottom: 1.5vw
 }
 
 .design h1 {
@@ -351,7 +347,11 @@ body {
   justify-content: space-evenly;
   align-items: center;
   list-style: none;
-  width: 100%;
+  width: 100%
+}
+
+.footer ul li a {
+  text-decoration: none;
   color: #3d7b6f
 }
 
@@ -366,6 +366,21 @@ body {
 
 .footer ul:nth-child(3) {
   max-width: 17rem
+}
+
+.attribution {
+  text-align: center;
+  background: #1d1e25
+}
+
+.attribution p, .attribution a {
+  font-size: clamp(0.5rem, 3vw, 1.1rem);
+  text-decoration: none;
+  color: #ec9e0e
+}
+
+.attribution p {
+  color: #40b9ce
 }
 
 @media only screen and (max-width: 750px) {
@@ -394,7 +409,7 @@ body {
     border-radius: 7px 0 7px 7px
   }
 
-  .navBar li {
+  .navBar li a {
     color: #5a636c
   }
 
