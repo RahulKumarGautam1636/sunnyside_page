@@ -33,6 +33,17 @@ body {
   transition: height 0.5s, opacity 0.5s
 }
 
+.navBar::before {
+  content: '';
+  position: absolute;
+  top: -29px;
+  right: 0px;
+  height: 31px;
+  width: 30px;
+  background: #fff;
+  clip-path: polygon(100% 0, 0% 100%, 100% 100%)
+}
+
 .navBar li a {
   text-decoration: none;
   color: #fff
