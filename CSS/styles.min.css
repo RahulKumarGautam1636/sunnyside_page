@@ -126,8 +126,29 @@ body {
   position: relative
 }
 
-.home img {
+.home #headerImg {
   width: 100%
+}
+
+.home #arrow {
+  position: absolute;
+  top: 23vw;
+  left: 50%;
+  height: 9vw;
+  transform: translate(-50%, -50%);
+  animation: animate 1.5s linear infinite;
+}
+
+@keyframes animate {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(5rem);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
 
 .home h1 {
@@ -435,6 +456,11 @@ body {
     transform: translate(-50%, 41vw);
     white-space: normal;
     text-align: center
+  }
+
+  .home #arrow {
+    top: 75vw;
+    height: 24vw;
   }
 
   .brand {
