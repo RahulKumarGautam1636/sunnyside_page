@@ -132,22 +132,22 @@ body {
 
 .home #arrow {
   position: absolute;
-  top: 23vw;
+  top: 24vw;
   left: 50%;
   height: 9vw;
-  transform: translate(-50%, -50%);
-  animation: animate 1.5s linear infinite;
+  transform: translate(-50%, -15%);
+  animation: animate 1.2s linear infinite;
 }
 
 @keyframes animate {
   0% {
-    transform: translateY(0);
+    transform: translate(-50%, -15%);
   }
   50% {
-    transform: translateY(5rem);
+    transform: translate(-50%, 42%);
   }
   100% {
-    transform: translateY(0);
+    transform: translate(-50%, -15%);
   }
 }
 
